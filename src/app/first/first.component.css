@@ -1,0 +1,38 @@
+.box
+{
+    margin: 20px 5px 5px 5px !important;
+    border: 1px solid rgb(238, 234, 234);
+    padding: 10px !important;
+}
+.title{
+    color: #505969;
+    font-weight: 600;
+    margin: 10px 0px 1px 0px;
+    
+}
+.subtxt
+{
+    border-bottom: 1px solid rgb(234, 228, 228);
+    margin: 0;
+   font-size: 10px; 
+}
+.subtxtlist
+{
+    margin: 0;
+   font-size: 10px; 
+}
+label
+{
+    margin:10px 10px 0px 2px !important;
+    padding: 2px 5px 2px 5px;
+    background: #A6C88F;
+    border-radius: 2px;
+}
+.bluebox
+{
+    margin:10px 10px 0px 2px;
+    padding: 2px 5px 2px 5px;
+    background: #2F6896;
+    color: White;
+    border-radius: 2px;
+}

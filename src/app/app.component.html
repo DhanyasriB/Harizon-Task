@@ -1,0 +1,91 @@
+<mat-sidenav-container class="sidenav-container">
+  <!-- Side Panel -->
+  <mat-sidenav #sidenav mode="side" [opened]="true" class="sidenav">
+
+    <mat-nav-list>
+      <mat-list-item>
+        <mat-icon>menu</mat-icon>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon>grid_on</mat-icon>
+
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon>school</mat-icon>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main Content -->
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <img class="img" src="assets/1.jpg" alt="">
+      <span class="vertical-line"></span>
+      <mat-icon style="margin-left: 20px; margin-right: 20px;">home</mat-icon>
+      <select class="form-select">
+        <option selected>Chennai</option>
+        <option value="1">Bangalore</option>
+        <option value="2">Trichy</option>
+      </select>
+
+      <span class="spacer"></span>
+
+      <div class="search-container">
+        <mat-icon class="search-icon">search</mat-icon>
+        <input class="search-input" type="text" placeholder="Search">
+      </div>
+
+
+      <p class="username">George William <br /> <span class="admin">Super Admin</span></p>
+      <img src="assets/2.jpg" width="50px" alt="">
+
+    </mat-toolbar>
+
+    <div class="container-fluid">
+      <button>> Program</button>
+      <button>> Masters in Business Administration - MBA</button> <span>Details Overview</span>
+      <p>Program Educational Objectives (PEOs)</p>
+
+
+
+      <div class="row" style="overflow: auto;">
+        <div class="col col-12 col-sm-6 col-md-4 col-lg col-xs-2" *ngFor="let card of tiles.slice(1)">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="card-title">{{ card.text.toUpperCase() }}</h5>
+              <mat-icon class="card-icon" style="color: rgba(26, 121, 237, 0.402);">content_copy</mat-icon>
+            </div>
+            <div class="card-body">
+              <p style="font-size: 12px;">{{ card.textcontent }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row main">
+        <div class="col col-12 col-sm-3 col-md-2 col-lg-2 col-xs-2 box">
+          <app-first></app-first>
+        </div>
+        <div class="col col-12 col-sm-8 col-md-8 col-lg-10 col-xs-8 box1">
+          <div class="row">
+            <p style="font-weight: bold; margin-top: 10px;"> <span class="badge">Total Students <span class="num">
+                  102</span></span> <span class="badge">Course Average Mark <span class="num"> 85%</span></span></p>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xs-2">
+              <p style="font-weight: bold;"> Assessment Process</p>
+              <app-second></app-second>
+            </div>
+
+            <div class="col col-12 col-sm-12 col-md-12 col-lg col-xs-2 ">
+              <p style="font-weight: bold; margin-top: 20px;"> Student Attendance</p>
+              <app-third></app-third>
+              <p style="text-align: center;">weeks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

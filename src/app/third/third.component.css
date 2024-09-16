@@ -1,0 +1,11 @@
+.chart-container {
+  position: relative;
+  width: 100%; 
+  height: 200px;
+  overflow: auto !important;
+}
+
+#Barchart {
+  width: 100% !important; 
+  height: 100px;
+}
